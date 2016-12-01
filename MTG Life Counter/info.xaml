@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="MTG_Life_Counter.info"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MTG_Life_Counter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#FF3B473F">
+    <Grid Background="#FF3B473F">
+        <Grid.Transitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.Transitions>
+        <ScrollViewer>
+        <StackPanel MaxHeight="500" >
+            <TextBlock Text="About" Foreground="White" Style="{StaticResource HeaderTextBlockStyle}" FontWeight="Normal"/>
+                <TextBlock Text="Credits" HorizontalAlignment="Center"  Foreground="White" Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,40"/>
+            <TextBlock HorizontalAlignment="Center" Foreground="White" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" MaxWidth="500">
+                <TextBlock.Text>
+                    Thanks to icon8.com and cooltext.com for providing images,icons and fonts.
+                    Developed by Stamatis Stiliatis, a software engineering student.
+                </TextBlock.Text>
+            </TextBlock>
+            <TextBlock Text="MTG Life Counter" Foreground="White" Style="{StaticResource TitleTextBlockStyle}" HorizontalAlignment="Center" Margin="0,40,0,40"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" Foreground="White" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" MaxWidth="500" Margin="0,0,0,100">
+                    <TextBlock.Text>
+                        Designed for casual matches among friends. Simple and easy to use with minor customization. Currently support only
+                    2 player matches. Future updates will provide more features
+                    </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
